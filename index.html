@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Code Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 95%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        .code-section {
+            background: #fff;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px #ccc;
+        }
+        pre {
+            background: #f4f4f4;
+            padding: 15px;
+            border: 1px solid #ddd;
+            white-space: pre-wrap; 
+            word-wrap: break-word;
+        }
+        button {
+            background: #038cfc;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            display: block;
+            margin: 10px auto;
+        }
+        button:hover {
+            background: #026bb3;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>HTML Code Gallery</h1>
+
+    <!-- Code Block 1 -->
+    <div class="code-section">
+        <h2>Webpage</h2>
+        <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;My Simple Webpage&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;Welcome to my web page&lt;/h1&gt;
+        &lt;p&gt;Checkout &lt;a href="https://www.google.com" target="_blank"&gt;Google&lt;/a&gt; for more information&lt;/p&gt;
+        
+        &lt;marquee behaviour="alternate" direction="right" bgcolor="#038cfc" height="40" loop="2"&gt;
+            IT club Impetus "Empowering tech minds, aspiring innovation."
+        &lt;/marquee&gt;
+
+        &lt;center&gt;
+            &lt;img src="impetus.jpg" alt="club event" width="300" height="300"&gt;
+        &lt;/center&gt;
+
+        &lt;p&gt;The IT club Impetus was inaugurated on 6th August 2019 with a vision of fostering technical excellence and innovation.&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+        </pre>
+        <button onclick="copyCode(this)">Copy</button>
+    </div>
+
+    <!-- Code Block 2 -->
+    <div class="code-section">
+        <h2>Time Table</h2>
+        <pre>
+&lt;!DOCTYPE HTML&gt;
+&lt;HTML&gt;
+&lt;HEAD&gt;
+    &lt;TITLE&gt;BCA IV&lt;/TITLE&gt; 
+    &lt;style&gt;
+        table { border-collapse: collapse; width: 50%; margin: 20px auto; }
+        th, td { border: 1px solid black; padding: 8px; text-align: center; }
+        th { background-color: #f2f2f2; }
+        tr:hover { background-color: rgb(207, 179, 255); }
+    &lt;/style&gt;
+&lt;/HEAD&gt;
+&lt;body&gt;
+    &lt;h1 style="text-align:center"&gt;BCA IV&lt;sup&gt;th&lt;/sup&gt; Semester Time Table&lt;/h1&gt;   
+    &lt;table&gt;
+        &lt;tr&gt;
+            &lt;th&gt;DAY&lt;/th&gt;
+            &lt;th&gt;8:30-9:30 AM&lt;/th&gt;
+            &lt;th&gt;9:30-10:25 AM&lt;/th&gt;
+            &lt;th&gt;10:25-10:50 AM&lt;/th&gt;
+            &lt;th&gt;10:50-11:50 AM&lt;/th&gt;
+            &lt;th&gt;11:50-12:45 PM&lt;/th&gt;
+            &lt;th&gt;12:45-1:30 PM&lt;/th&gt;
+            &lt;th&gt;1:30-2:30 PM&lt;/th&gt;
+            &lt;th&gt;2:30-3:30 PM&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;MONDAY&lt;/td&gt;
+            &lt;td&gt;SE&lt;/td&gt;
+            &lt;td&gt;FEIA&lt;/td&gt;
+            &lt;td rowspan="7"&gt;SHORT BREAK&lt;/td&gt;
+            &lt;td&gt;DAA LAB&lt;/td&gt;
+            &lt;td&gt;DAA LAB&lt;/td&gt;
+            &lt;td rowspan="7"&gt;LUNCH BREAK&lt;/td&gt;
+            &lt;td&gt;IT LAB&lt;/td&gt;
+            &lt;td&gt;IT LAB&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;TUESDAY&lt;/td&gt;
+            &lt;td&gt;DAA LAB&lt;/td&gt;
+            &lt;td&gt;DAA LAB&lt;/td&gt;
+            &lt;td&gt;LANG&lt;/td&gt;
+            &lt;td&gt;ENG&lt;/td&gt;
+            &lt;td&gt;IT&lt;/td&gt;
+            &lt;td&gt;IT LAB&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;WEDNESDAY&lt;/td&gt;
+            &lt;td&gt;ENG&lt;/td&gt;
+            &lt;td&gt;IT&lt;/td&gt;
+            &lt;td&gt;SE&lt;/td&gt;
+            &lt;td&gt;DAA&lt;/td&gt;
+            &lt;td&gt;IT LAB&lt;/td&gt;
+            &lt;td&gt;LANG&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;THURSDAY&lt;/td&gt;
+            &lt;td&gt;FEIA&lt;/td&gt;
+            &lt;td&gt;CI&lt;/td&gt;
+            &lt;td&gt;SE&lt;/td&gt;
+            &lt;td&gt;DAA&lt;/td&gt;
+            &lt;td&gt;ENG&lt;/td&gt;
+            &lt;td&gt;LANG&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;FRIDAY&lt;/td&gt;
+            &lt;td&gt;LANG&lt;/td&gt;
+            &lt;td&gt;DAA&lt;/td&gt;
+            &lt;td&gt;IT&lt;/td&gt;
+            &lt;td&gt;ENG&lt;/td&gt;
+            &lt;td&gt;FEIA&lt;/td&gt;
+            &lt;td&gt;CI&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;
+&lt;/body&gt;
+&lt;/HTML&gt;
+        </pre>
+        <button onclick="copyCode(this)">Copy</button>
+    </div>
+
+    <!-- Code Block 3 -->
+    <div class="code-section">
+        <h2>Frames</h2>
+        <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Frame Example&lt;/title&gt;
+&lt;/head&gt;
+&lt;frameset rows='20%,*&gt;
+    &lt;frame src='header.html' name='header' scrolling='no' moresize&gt;
+    &lt;frameset cols='20%,*&gt;
+        &lt;frame src='sidebar.html' name='sidebar' scrolling='no'&gt;
+        &lt;frame src='content.html' name='content'&gt;
+    &lt;/frameset&gt;
+&lt;/frameset&gt;
+&lt;/html&gt;
+        </pre>
+        <button onclick="copyCode(this)">Copy</button>
+    </div>
+
+    <!-- Code Block 4 -->
+    <div class="code-section">
+        <h2>Sample Form</h2>
+        <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Sample Form&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Sample Form&lt;/h1&gt;
+    &lt;form&gt;
+        &lt;label for="name"&gt;Name:&lt;/label&gt;
+        &lt;input type="text" id="name" name="name" placeholder="Enter your name" required&gt;&lt;br&gt;&lt;br&gt;
+
+        &lt;label for="email"&gt;Email:&lt;/label&gt;
+        &lt;input type="email" id="email" name="email" placeholder="Enter your email" required&gt;&lt;br&gt;&lt;br&gt;
+
+        &lt;label for="address"&gt;Message:&lt;/label&gt;
+        &lt;textarea id="address" name="message" rows="4" cols="50" placeholder="Enter your message" required&gt;&lt;/textarea&gt;&lt;br&gt;&lt;br&gt;
+
+        &lt;label for="gender"&gt;Gender:&lt;/label&gt;
+        &lt;input type="radio" id="male" name="gender" value="male" checked&gt;
+        &lt;label for="male"&gt;Male&lt;/label&gt;
+        &lt;input type="radio" id="female" name="gender" value="female"&gt;
+        &lt;label for="female"&gt;Female&lt;/label&gt;&lt;br&gt;&lt;br&gt;
+
+        &lt;label for="hobbies"&gt;Hobbies:&lt;/label&gt;
+        &lt;input type="checkbox" id="reading" name="hobbies" value="reading"&gt;
+        &lt;label for="reading"&gt;Reading&lt;/label&gt;
+        &lt;input type="checkbox" id="traveling" name="hobbies" value="traveling"&gt;
+        &lt;label for="traveling"&gt;Traveling&lt;/label&gt;
+        &lt;input type="checkbox" id="sports" name="hobbies" value="sports"&gt;
+        &lt;label for="sports"&gt;Sports&lt;/label&gt;&lt;br&gt;&lt;br&gt;
+
+        &lt;input type="submit" value="Submit"&gt;
+    &lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+        </pre>
+        <button onclick="copyCode(this)">Copy</button>
+    </div>
+
+    <!-- Code Block 5 -->
+    <div class="code-section">
+        <h2>Multiple Styles</h2>
+        <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt; Multiple Styles Example&lt;/title&gt;
+&lt;link rel="stylesheet" type="text/css" href="style.css"&gt;
+&lt;style&gt;
+h2 {
+  color: blue;
+  font-family: Arial, sans-serif;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1 style="color: red; text-align: center;"&gt;
+  Inline style example
+&lt;/h1&gt;
+&lt;h2&gt; Internal style example &lt;/h2&gt;
+&lt;p&gt; External style example &lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+&lt;!-- Style.css --&gt;
+p {
+  justify-content: right;
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-weight: bold;
+  text-align: left;
+}
+        </pre>
+        <button onclick="copyCode(this)">Copy</button>
+    </div>
+
+</div>
+
+<footer>
+    HTML Code Gallery &copy; 2025
+</footer>
+
+<script>
+    function copyCode(button) {
+        const codeBlock = button.previousElementSibling.innerText;
+        navigator.clipboard.writeText(codeBlock).then(() => {
+            alert("Code copied to clipboard!");
+        });
+    }
+</script>
+
+</body>
+</html>
