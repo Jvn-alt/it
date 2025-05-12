@@ -45,6 +45,8 @@
             border-radius: 5px;
             display: block;
             margin: 10px auto;
+            
+ 
         }
         button:hover {
             background: #026bb3;
@@ -54,17 +56,107 @@
             padding: 20px;
             background: #333;
             color: #fff;
+        textarea {
+      width: 100%;
+      height: 300px;
+      margin-bottom: 10px;
         }
     </style>
+<script>
+    function copyCode(id) {
+      const textarea = document.getElementById(id);
+      textarea.select();
+      document.execCommand("copy");
+      alert("Code copied!");
+    }
+  </script>
 </head>
 <body>
+
+    <div class="code-section">
+        <h2>Email</h2>
+        <pre>
+            Working of E-mail
+The email refers to the electronic mail means of communication of sending and receiving messages over the internet. Email is the most common form of communication nowadays. An email has significantly evolved over the past couple of years. There are now stronger sync and messaging features along with stronger security and spam-related features.
+Components of an E-mail
+Sender: The sender creates an email in which they record the info that needs to be transferred to the receiver.
+Receiver: The receiver gets the info sent by the sender via email.
+Email address: The email address is just like a house address where the communication arrives for the sender and receiver, and they communicate with each other.
+Mailer: The mailer program contains (and) allows the ability to read, write, and manage emails like Gmail, Outlook, etc.
+Mail server: The mail server is responsible for sending, receiving, managing, and recording all the emails.
+data proceeded by their respective mail programs & them processing them to their respective user.
+SMTP → Simple mail transfer protocol SMTP basically uses the internet network connection to send and receive email message over the internet.
+Protocols of E-mail:
+Emails basically use two types of standard protocol for communication over the internet they are:
+POP
+POP stands for post office protocol for email. Similar to a post, our approach is just to drop the email over the service mail provider & then leave it for services to handle the transfer of message. We can be even disconnected from the internet after sending the email via POP.
+IMAP:
+Internet Message access protocol
+IMAP has some special advantage over POP like it supports bidirectional communication over email and there is no need to store conversations on servers as they already will maintained in a database.
+It has some advance features like it tells the sender that the receiver has read the email sent by him.
+Sending an email:
+Open the email client and click on the "compose new email" button.
+In the "To" field, enter the email address of the recipient.
+In the "Subject" field, enter a brief description of the email's content.
+If there is a need to include an attachment, click on the "Attach file" icon and select the file to attach.
+In the body of the email, type the message.
+Once finished with composing, enter the email and click on the "send" button.
+Receiving an email:
+Open the email client and navigate to the inbox.
+Locate the email to read and click on it.
+The email will open, and the content can be read.
+If there is an attachment, click on the attachment to open it or download it to the computer.
+Forwarding E-mail
+Open the email client and navigate to the inbox.
+Locate the email to forward and click on it.
+Click on the 'forward' button (usually an arrow) or select "forward" from the options menu.
+In the 'To' field, enter the email address of the person to forward the email to.
+If a message needs to be added to the forwarded email, it can be done in the body of the email.
+If there's an attachment, it will be included in the forwarded email.
+Once finished composing the forwarded email, click on the 'Send' button
+             </pre>
+        <button onclick="copyCode(this)">Copy</button>
+    </div>
+      <div class="code-section">
+        <h2>Zoom</h2>
+        <pre>
+            Zoom and Google Meet are popular digital communication tools that allow users to conduct online meetings, webinars, and video conferences. These platforms heavily rely on Voice over Internet Protocol (VoIP) technology that allows voice calls to be made using an internet connection instead of a regular analog phone line. This technology facilitates real-time audio communication during meetings on Zoom and Google Meet. The use of VoIP technology ensures that both platforms can provide high-quality audio transmission, resulting in efficient and effective communication regardless of the participant's geographical location.
+Steps to create and organize a meeting in Zoom or Google Meet for Zoom:
+Log in to a Zoom account.
+Click on the "Schedule a Meeting" button.
+Fill in the details of the meeting, including the date, time, and duration.
+Give the meeting a name and add a description, if necessary.
+Choose whether to enable video, audio, and screen sharing.
+Select the time zone of the meeting.
+Choose whether to require a password.
+Meeting Password or not
+Click on the "Schedule" button to create the meeting.
+Share the meeting link (or) invite participants via email.
+When it's time for the meeting, open the Zoom app, navigate to the "Meetings" tab, and click on "Start" next to the scheduled meeting.
+             </pre>
+        <button onclick="copyCode(this)">Copy</button>
+    </div>
+     <div class="code-section">
+        <h2>Google Meet</h2>
+        <pre>
+            For Google Meet
+Log in to Google account.
+Open Google Calendar and click on the "+" button to create a new event.
+Give your event a title and select the date & time.
+Click on the "Add conferencing" button.
+Select "settings icon" from the options and choose video call options.
+Click on the "Save" button to create the event and send invites to participants.
+Share the event link or invite participants via email.
+               </pre>
+        <button onclick="copyCode(this)">Copy</button>
+    </div>
 
 <div class="container">
     <h1>HTML Code Gallery</h1>
 
     <!-- Code Block 1 -->
     <div class="code-section">
-        <h2>Webpage</h2>
+        <h2>IT LAB 3</h2>
         <pre>
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
@@ -92,7 +184,7 @@
 
     <!-- Code Block 2 -->
     <div class="code-section">
-        <h2>Time Table</h2>
+        <h2>IT LAB 4</h2>
         <pre>
 &lt;!DOCTYPE HTML&gt;
 &lt;HTML&gt;
@@ -175,76 +267,78 @@
 
     <!-- Code Block 3 -->
     <div class="code-section">
-        <h2>Frames</h2>
+        <h2>IT LAB 5</h2>
         <pre>
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
-    &lt;title&gt;Frame Example&lt;/title&gt;
+  &lt;title&gt;Frame Example&lt;/title&gt;
 &lt;/head&gt;
-&lt;frameset rows='20%,*'&gt;
-    &lt;frame src='header.html' name='header' scrolling='no' moresize&gt;
-    &lt;frameset cols='20%,*'&gt;
-        &lt;frame src='sidebar.html' name='sidebar' scrolling='no'&gt;
-        &lt;frame src='content.html' name='content'&gt;
-    &lt;/frameset&gt;
+&lt;frameset rows="20%,*"&gt;
+  &lt;frame src="header.html" name="header" scrolling="no"&gt;
+  &lt;frameset cols="20%,*"&gt;
+    &lt;frame src="sidebar.html" name="sidebar" scrolling="no"&gt;
+    &lt;frame src="content.html" name="content"&gt;
+  &lt;/frameset&gt;
 &lt;/frameset&gt;
 &lt;/html&gt;
 
-            &lt;!DOCTYPE html&gt;
-&lt;html&gt;
-&lt;head&gt;
-    &lt;title&gt;header&lt;title&gt;
-    &lt;style&gt;
-        body{
-        background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQBfldgkP2FyKHJxb47Yk_FuH7ngz3X4DfQQ&s');   
-        background-size: 100px auto;
-        background-repeat: no-repeat;
-        background-color: #d3dce9;
-            }
-        &lt;style&gt;
-        &lt;head&gt;
-&lt;body&gt;
-      &lt;center&gt; &lt;h1&gt;This is the header frame&lt;/h1&gt;&lt;/center&gt;
-      &lt;center&gt; &lt;h2&gt;St.Francis College&lt;/h2&gt;&lt;/center&gt;
-        &lt;body&gt;
-        &lt;html&gt;
-
+&lt;!-- header.html --&gt;
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
-    &lt;title&gt;content&lt;title&gt;
-        &lt;head&gt;
-&lt;body bgcolor='#fae6f4'&gt;
-    &lt;p&gt;This is the content frame&lt;/p&gt;
-    &lt;p&gt;&lt;b&gt;VISSION&lt;/b&gt;  to be a chrysals&lt;/p&gt;
-    &lt;p&gt;&lt;b&gt;MISSION&lt;/b&gt;  to shurn out high&lt;/p&gt;
-        &lt;body&gt;
-        &lt;html&gt;
+  &lt;title&gt;Header&lt;/title&gt;
+  &lt;style&gt;
+    body {
+      background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQBfldgkP2FyKHJxb47Yk_FuH7ngz3X4DfQQ&amp;s');   
+      background-size: 100px auto;
+      background-repeat: no-repeat;
+      background-color: #d3dce9;
+    }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;center&gt;&lt;h1&gt;This is the header frame&lt;/h1&gt;&lt;/center&gt;
+  &lt;center&gt;&lt;h2&gt;St. Francis College&lt;/h2&gt;&lt;/center&gt;
+&lt;/body&gt;
+&lt;/html&gt;
 
-&lt;&lt;!DOCTYPE html&gt;
+&lt;!-- content.html --&gt;
+&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
-    &lt;title&gt;sidebar&lt;/title&gt;
-        &lt;/head&gt;
-&lt;body bgcolor='#acd6e6'&gt;
-    &lt;h2&gt;This is the sidebarframe&lt;/h2&gt;
-    &lt;ul&gt;
-        &lt;li&gt;admission&lt;/li&gt;
-        &lt;li&gt;courses&lt;/li&gt;
-        &lt;li&gt;department&lt;/li&gt;
-        &lt;li&gt;facilities&lt;/li&gt;
-    &lt;/ul&gt;
-        &lt;body&gt;
-        &lt;html&gt;
+  &lt;title&gt;Content&lt;/title&gt;
+&lt;/head&gt;
+&lt;body bgcolor="#fae6f4"&gt;
+  &lt;p&gt;This is the content frame&lt;/p&gt;
+  &lt;p&gt;&lt;b&gt;VISION:&lt;/b&gt; To be a chrysalis&lt;/p&gt;
+  &lt;p&gt;&lt;b&gt;MISSION:&lt;/b&gt; To churn out high...&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
 
-        </pre>
-        <button onclick="copyCode(this)">Copy</button>
-    </div>
+&lt;!-- sidebar.html --&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;Sidebar&lt;/title&gt;
+&lt;/head&gt;
+&lt;body bgcolor="#acd6e6"&gt;
+  &lt;h2&gt;This is the sidebar frame&lt;/h2&gt;
+  &lt;ul&gt;
+    &lt;li&gt;Admission&lt;/li&gt;
+    &lt;li&gt;Courses&lt;/li&gt;
+    &lt;li&gt;Department&lt;/li&gt;
+    &lt;li&gt;Facilities&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+<button onclick="copyCode(this)">Copy</button>
+</div>
 
     <!-- Code Block 4 -->
     <div class="code-section">
-        <h2>Sample Form</h2>
+        <h2>IT LAB 6</h2>
         <pre>
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
@@ -287,7 +381,7 @@
 
     <!-- Code Block 5 -->
     <div class="code-section">
-        <h2>Multiple Styles</h2>
+        <h2>IT LAB 7</h2>
         <pre>
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
@@ -322,84 +416,309 @@ p {
         <button onclick="copyCode(this)">Copy</button>
     </div>
       <!-- Code Block 46-->
-    <div class="code-section">
-        <h2>Email</h2>
+
+
+<div class="code-section">
+        <h2>IT LAB 8</h2>
         <pre>
-            Working of E-mail
-The email refers to the electronic mail means of communication of sending and receiving messages over the internet. Email is the most common form of communication nowadays. An email has significantly evolved over the past couple of years. There are now stronger sync and messaging features along with stronger security and spam-related features.
-Components of an E-mail
-Sender: The sender creates an email in which they record the info that needs to be transferred to the receiver.
-Receiver: The receiver gets the info sent by the sender via email.
-Email address: The email address is just like a house address where the communication arrives for the sender and receiver, and they communicate with each other.
-Mailer: The mailer program contains (and) allows the ability to read, write, and manage emails like Gmail, Outlook, etc.
-Mail server: The mail server is responsible for sending, receiving, managing, and recording all the emails.
-data proceeded by their respective mail programs & them processing them to their respective user.
-SMTP → Simple mail transfer protocol SMTP basically uses the internet network connection to send and receive email message over the internet.
-Protocols of E-mail:
-Emails basically use two types of standard protocol for communication over the internet they are:
-POP
-POP stands for post office protocol for email. Similar to a post, our approach is just to drop the email over the service mail provider & then leave it for services to handle the transfer of message. We can be even disconnected from the internet after sending the email via POP.
-IMAP:
-Internet Message access protocol
-IMAP has some special advantage over POP like it supports bidirectional communication over email and there is no need to store conversations on servers as they already will maintained in a database.
-It has some advance features like it tells the sender that the receiver has read the email sent by him.
-Sending an email:
-Open the email client and click on the "compose new email" button.
-In the "To" field, enter the email address of the recipient.
-In the "Subject" field, enter a brief description of the email's content.
-If there is a need to include an attachment, click on the "Attach file" icon and select the file to attach.
-In the body of the email, type the message.
-Once finished with composing, enter the email and click on the "send" button.
-Receiving an email:
-Open the email client and navigate to the inbox.
-Locate the email to read and click on it.
-The email will open, and the content can be read.
-If there is an attachment, click on the attachment to open it or download it to the computer.
-Forwarding E-mail
-Open the email client and navigate to the inbox.
-Locate the email to forward and click on it.
-Click on the 'forward' button (usually an arrow) or select "forward" from the options menu.
-In the 'To' field, enter the email address of the person to forward the email to.
-If a message needs to be added to the forwarded email, it can be done in the body of the email.
-If there's an attachment, it will be included in the forwarded email.
-Once finished composing the forwarded email, click on the 'Send' button
-             </pre>
+SEND ME IF U GOT IT
+        </pre>
         <button onclick="copyCode(this)">Copy</button>
-    </div>
-      <div class="code-section">
-        <h2>Zoom</h2>
-        <pre>
-            Zoom and Google Meet are popular digital communication tools that allow users to conduct online meetings, webinars, and video conferences. These platforms heavily rely on Voice over Internet Protocol (VoIP) technology that allows voice calls to be made using an internet connection instead of a regular analog phone line. This technology facilitates real-time audio communication during meetings on Zoom and Google Meet. The use of VoIP technology ensures that both platforms can provide high-quality audio transmission, resulting in efficient and effective communication regardless of the participant's geographical location.
-Steps to create and organize a meeting in Zoom or Google Meet for Zoom:
-Log in to a Zoom account.
-Click on the "Schedule a Meeting" button.
-Fill in the details of the meeting, including the date, time, and duration.
-Give the meeting a name and add a description, if necessary.
-Choose whether to enable video, audio, and screen sharing.
-Select the time zone of the meeting.
-Choose whether to require a password.
-Meeting Password or not
-Click on the "Schedule" button to create the meeting.
-Share the meeting link (or) invite participants via email.
-When it's time for the meeting, open the Zoom app, navigate to the "Meetings" tab, and click on "Start" next to the scheduled meeting.
-             </pre>
-        <button onclick="copyCode(this)">Copy</button>
-    </div>
-     <div class="code-section">
-        <h2>Google Meet</h2>
-        <pre>
-            For Google Meet
-Log in to Google account.
-Open Google Calendar and click on the "+" button to create a new event.
-Give your event a title and select the date & time.
-Click on the "Add conferencing" button.
-Select "settings icon" from the options and choose video call options.
-Click on the "Save" button to create the event and send invites to participants.
-Share the event link or invite participants via email.
-               </pre>
-        <button onclick="copyCode(this)">Copy</button>
-    </div>
 </div>
+
+<div class="code-section">
+        <h2>IT LAB 9</h2>
+        <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;Customer Feedback&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Customer Feedback&lt;/h1&gt;
+  &lt;p&gt;Thank you for choosing our product!&lt;br&gt;
+  We would love to hear your feedback&lt;br&gt;
+  so that we can continue to improve our services.&lt;/p&gt;
+
+  &lt;button onclick="showFeedbackForm()"&gt;Leave Feedback&lt;/button&gt;&lt;br&gt;
+
+  &lt;script&gt;
+    function showFeedbackForm() {
+      let name = window.prompt("Please enter your name:");
+      let email = window.prompt("Please enter your email address:");
+      let rating = window.prompt("Please rate your experience from 1 to 5:");
+      let comment = window.prompt("Please leave a comment:");
+
+      document.writeln("Name: " + name + "&lt;br /&gt;");
+      document.writeln("Email: " + email + "&lt;br /&gt;");
+      document.writeln("Rating: " + rating + "&lt;br /&gt;");
+      document.writeln("Comment: " + comment + "&lt;br /&gt;");
+
+      if (name && email && rating && comment) {
+        let result = window.confirm("Thank you for your feedback! Do you want to submit your feedback?");
+        if (result) {
+          window.alert("Your feedback has been submitted. Thank you for your valuable input.");
+        } else {
+          window.alert("Please fill in all the fields to submit your feedback.");
+        }
+      }
+    }
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+        </pre>
+        <button onclick="copyCode(this)">Copy</button>
+</div>
+
+<div class="code-section">
+        <h2>IT LAB 10</h2>
+        <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;Registration Form&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;Registration Form&lt;/h1&gt;
+
+&lt;form onsubmit=&quot;return validateForm()&quot;&gt;
+  &lt;label for=&quot;name&quot;&gt;Name:&lt;/label&gt;
+  &lt;input type=&quot;text&quot; id=&quot;name&quot; name=&quot;name&quot; required&gt;&lt;br&gt;&lt;br&gt;
+
+  &lt;label for=&quot;email&quot;&gt;Email:&lt;/label&gt;
+  &lt;input type=&quot;email&quot; id=&quot;email&quot; name=&quot;email&quot; required&gt;&lt;br&gt;&lt;br&gt;
+
+  &lt;label for=&quot;password&quot;&gt;Password:&lt;/label&gt;
+  &lt;input type=&quot;password&quot; id=&quot;password&quot; name=&quot;password&quot; minlength=&quot;8&quot; required&gt;&lt;br&gt;&lt;br&gt;
+
+  &lt;label for=&quot;confirm-password&quot;&gt;Confirm Password:&lt;/label&gt;
+  &lt;input type=&quot;password&quot; id=&quot;confirm-password&quot; name=&quot;confirm-password&quot; minlength=&quot;8&quot; required&gt;&lt;br&gt;&lt;br&gt;
+
+  &lt;label for=&quot;phone&quot;&gt;Phone Number:&lt;/label&gt;
+  &lt;input type=&quot;tel&quot; id=&quot;phone&quot; name=&quot;phone&quot; pattern=&quot;[0-9]{10}&quot; required&gt;&lt;br&gt;&lt;br&gt;
+
+  &lt;input type=&quot;submit&quot; value=&quot;Register&quot;&gt;
+&lt;/form&gt;
+
+&lt;script&gt;
+function validateForm() {
+  let name = document.getElementById(&quot;name&quot;).value;
+  let email = document.getElementById(&quot;email&quot;).value;
+  let password = document.getElementById(&quot;password&quot;).value;
+  let confirmPassword = document.getElementById(&quot;confirm-password&quot;).value;
+  let phone = document.getElementById(&quot;phone&quot;).value;
+
+  if (name === &quot;&quot;) {
+    alert(&quot;Please enter your name.&quot;);
+    return false;
+  }
+
+  let emailRegex = /^[a-z0-9]+@[a-z]+\\.[a-z]{2,3}$/;
+  if (!emailRegex.test(email)) {
+    alert(&quot;Please enter a valid email address.&quot;);
+    return false;
+  }
+
+  if (password === &quot;&quot;) {
+    alert(&quot;Please enter your password.&quot;);
+    return false;
+  }
+
+  if (password.length &lt; 8) {
+    alert(&quot;Your password must be at least 8 characters long.&quot;);
+    return false;
+  }
+
+  if (confirmPassword === &quot;&quot;) {
+    alert(&quot;Please confirm your password.&quot;);
+    return false;
+  }
+
+  if (password !== confirmPassword) {
+    alert(&quot;Passwords do not match.&quot;);
+    return false;
+  }
+
+  let phoneRegex = /^[0-9]{10}$/;
+  if (!phoneRegex.test(phone)) {
+    alert(&quot;Please enter a valid 10-digit phone number.&quot;);
+    return false;
+  }
+
+  alert(&quot;Registration successful!&quot;);
+  return true;
+}
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+        </pre>
+        <button onclick="copyCode(this)">Copy</button>
+</div>
+
+<div class="code-section">
+        <h2>IT LAB 11</h2>
+        <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;Arithmetic Operations&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Arithmetic Operations&lt;/h1&gt;
+  &lt;form&gt;
+    Number 1: &lt;input type="number" id="number1"&gt;&lt;br&gt;&lt;br&gt;
+    Number 2: &lt;input type="number" id="number2"&gt;&lt;br&gt;&lt;br&gt;
+    &lt;input type="button" value="Calculate" onclick="performOperations()"&gt;
+  &lt;/form&gt;
+  &lt;p id="addition"&gt;&lt;/p&gt;
+  &lt;p id="subtraction"&gt;&lt;/p&gt;
+  &lt;p id="multiplication"&gt;&lt;/p&gt;
+  &lt;p id="division"&gt;&lt;/p&gt;
+
+  &lt;script&gt;
+    function performOperations() {
+      var num1 = parseFloat(document.getElementById("number1").value);
+      var num2 = parseFloat(document.getElementById("number2").value);
+
+      document.getElementById("addition").innerHTML = "Addition: " + (num1 + num2);
+      document.getElementById("subtraction").innerHTML = "Subtraction: " + (num1 - num2);
+      document.getElementById("multiplication").innerHTML = "Multiplication: " + (num1 * num2);
+      document.getElementById("division").innerHTML = num2 !== 0 ? "Division: " + (num1 / num2) : "Division: Cannot divide by zero";
+    }
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+        </pre>
+        <button onclick="copyCode(this)">Copy</button>
+</div>
+
+<div class="code-section">
+        <h2>IT LAB 12</h2>
+        <pre>
+
+<h2>Main Page</h2>
+<textarea id="code1">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;St. Francis College&lt;/title&gt;
+    &lt;style&gt;
+      body {
+        font-family: Arial, sans-serif;
+      }
+      header {
+        background-color: #c9c9c9;
+        padding: 20px;
+        text-align: center;
+      }
+      nav a {
+        margin: 0 15px;
+      }
+    &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;header&gt;
+      &lt;img src="logo.jpeg" alt="St. Francis" width="100" /&gt;
+      &lt;h1&gt;St. Francis College&lt;/h1&gt;
+      &lt;p&gt;Address: PB.NO. 3417, 3rd Block, 8th Main,Koramangala Bengaluru - 560034.&lt;/p&gt;
+    &lt;/header&gt;
+    
+    &lt;nav&gt;
+      &lt;a href="home.html"&gt;Home&lt;/a&gt;
+      &lt;a href="about.html"&gt;About&lt;/a&gt;
+      &lt;a href="courses.html"&gt;Courses&lt;/a&gt;
+      &lt;a href="contactus.html"&gt;Contact Us&lt;/a&gt;
+    &lt;/nav&gt;
+
+    &lt;main&gt;
+      &lt;p&gt;Welcome to St. Francis College website&lt;/p&gt;
+      &lt;p&gt;We provide quality education and youth tips.&lt;/p&gt;
+    &lt;/main&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+
+</textarea>
+<button onclick="copyCode('code1')">Copy Main Page Code</button>
+
+<h2>About Page</h2>
+<textarea id="code2">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;About Us - St. Francis College&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;About&lt;/h1&gt;
+    &lt;p&gt;St. Francis College Bangalore is a minority Christian college.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+
+</textarea>
+<button onclick="copyCode('code2')">Copy About Page Code</button>
+
+<h2>Home Page</h2>
+<textarea id="code3">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;St. Francis College&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;St. Francis College&lt;/h1&gt;
+    &lt;p&gt;Vision : To be a chrysalis, where young students are transformed into graduate/ postgraduate entrepreneurs and innovative leaders of tomorrow's world, consistent with the Franciscan vision of integrity, peace, and love.&lt;/p&gt;
+    &lt;p&gt;Mission : To churn out highly competent graduates / postgraduates with a commitment to result-oriented work, a perennial zest for learning, a quest for excellence, an open mind, and the universal values of honesty, dignity, and mutual care.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+
+</textarea>
+<button onclick="copyCode('code3')">Copy Home Page Code</button>
+
+<h2>Courses Page</h2>
+<textarea id="code4">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Courses&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Courses&lt;/h1&gt;
+    &lt;h2&gt;BCA&lt;/h2&gt;
+    &lt;h2&gt;MCA&lt;/h2&gt;
+    &lt;h2&gt;BCOM&lt;/h2&gt;
+    &lt;h2&gt;BBA&lt;/h2&gt;
+    &lt;h2&gt;BSC&lt;/h2&gt;
+    &lt;h2&gt;MCOM&lt;/h2&gt;
+    &lt;h2&gt;MBA&lt;/h2&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+
+</textarea>
+<button onclick="copyCode('code4')">Copy Courses Page Code</button>
+
+<h2>Contact Page</h2>
+<textarea id="code5">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Contact Us&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Contact Us&lt;/h1&gt;
+    &lt;p&gt;Address: PB.NO. 3417, 3rd Block, 8th Main,Koramangala Bengaluru - 560034.&lt;/p&gt;
+    &lt;p&gt;Phone: 080-25531037&lt;/p&gt;
+    &lt;p&gt;Email: info@stfranciscollege.edu.in&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</textarea>
+<button onclick="copyCode('code5')">Copy Courses Page Code</button>
+        </pre>
+
+</div>
+
 
 <footer>
     HTML Code Gallery &copy; 2025
