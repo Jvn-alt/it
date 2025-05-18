@@ -421,7 +421,28 @@ p {
 <div class="code-section">
         <h2>IT LAB 8</h2>
         <pre>
-SEND ME IF U GOT IT
+Step 1: Open VS Code
+Step 2: Click on open folder & choose the file location where you want your CGI file & create a folder named CGI
+Step 3: Create a new folder within the CGI folder and name it cgi-bin
+Step 4: In the cgi-bin folder, create the CGI script & name it mycgi.py
+        import cgi
+        print("Content-type: text/html\n")
+        print("""
+        &lt;html&gt;
+        &lt;head&gt;
+        &lt;title&gt; CGI script - python &lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+        &lt;h1&gt; This is my 1st cgi script &lt;/h1&gt;
+        Hello world!
+        &lt;/body&gt;
+        &lt;/html&gt;
+        """)
+Step 5: Open Terminal & type the following:
+        http://localhost:8000/cgi-bin/mycgi.py
+Step 6: Open the browser then type:
+        http://localhost:8000/cgi-bin/mycgi.py
+            
         </pre>
         <button onclick="copyCode(this)">Copy</button>
 </div>
