@@ -4,64 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Code Gallery</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background: #f4f4f4;
-            color: #333;
-        }
-        .container {
-            width: 95%;
-            margin: auto;
-            overflow: hidden;
-            padding: 20px;
-        }
-        h1, h2 {
-            text-align: center;
-        }
-        .code-section {
-            background: #fff;
-            margin: 20px 0;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px #ccc;
-        }
-        pre {
-            background: #f4f4f4;
-            padding: 15px;
-            border: 1px solid #ddd;
-            white-space: pre-wrap; 
-            word-wrap: break-word;
-        }
-        button {
-            background: #038cfc;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-            border-radius: 5px;
-            display: block;
-            margin: 10px auto;
-            
- 
-        }
-        button:hover {
-            background: #026bb3;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: grey;
-            color: #fff;
-        textarea {
-      width: 100%;
-      height: 300px;
-      margin-bottom: 10px;
-        }
-    </style>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+  }
+  .container {
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+  }
+  h1, h2 {
+    text-align: center;
+    margin-top: 30px;
+    color: #2c3e50;
+  }
+  .code-section {
+    background: #fff;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #ccc;
+  }
+  pre {
+    background: #f4f4f4;
+    padding: 15px;
+    border: 1px solid #ddd;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+  button {
+    background: #038cfc;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+    margin: 10px auto;
+  }
+  button:hover {
+    background: #026bb3;
+  }
+  footer {
+    text-align: center;
+    padding: 20px;
+    background: grey;
+    color: #fff;
+  }
+  textarea {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 10px;
+    resize: none;
+  }
+  p {
+    margin: 10px 0;
+  }
+  .section {
+    margin-bottom: 25px;
+  }
+</style>
 <script>
     function copyCode(id) {
       const textarea = document.getElementById(id);
@@ -72,81 +80,94 @@
   </script>
 </head>
 <body>
-
+<h2><strong>Dont Get Caught :)</strong></h2>
     <div class="code-section">
-        <h2>Email</h2>
-        <pre>
-            Working of E-mail
-The email refers to the electronic mail means of communication of sending and receiving messages over the internet. Email is the most common form of communication nowadays. An email has significantly evolved over the past couple of years. There are now stronger sync and messaging features along with stronger security and spam-related features.
-Components of an E-mail
-Sender: The sender creates an email in which they record the info that needs to be transferred to the receiver.
-Receiver: The receiver gets the info sent by the sender via email.
-Email address: The email address is just like a house address where the communication arrives for the sender and receiver, and they communicate with each other.
-Mailer: The mailer program contains (and) allows the ability to read, write, and manage emails like Gmail, Outlook, etc.
-Mail server: The mail server is responsible for sending, receiving, managing, and recording all the emails.
-data proceeded by their respective mail programs & them processing them to their respective user.
-SMTP → Simple mail transfer protocol SMTP basically uses the internet network connection to send and receive email message over the internet.
-Protocols of E-mail:
-Emails basically use two types of standard protocol for communication over the internet they are:
-POP
-POP stands for post office protocol for email. Similar to a post, our approach is just to drop the email over the service mail provider & then leave it for services to handle the transfer of message. We can be even disconnected from the internet after sending the email via POP.
-IMAP:
-Internet Message access protocol
-IMAP has some special advantage over POP like it supports bidirectional communication over email and there is no need to store conversations on servers as they already will maintained in a database.
-It has some advance features like it tells the sender that the receiver has read the email sent by him.
-Sending an email:
-Open the email client and click on the "compose new email" button.
-In the "To" field, enter the email address of the recipient.
-In the "Subject" field, enter a brief description of the email's content.
-If there is a need to include an attachment, click on the "Attach file" icon and select the file to attach.
-In the body of the email, type the message.
-Once finished with composing, enter the email and click on the "send" button.
-Receiving an email:
-Open the email client and navigate to the inbox.
-Locate the email to read and click on it.
-The email will open, and the content can be read.
-If there is an attachment, click on the attachment to open it or download it to the computer.
-Forwarding E-mail
-Open the email client and navigate to the inbox.
-Locate the email to forward and click on it.
-Click on the 'forward' button (usually an arrow) or select "forward" from the options menu.
-In the 'To' field, enter the email address of the person to forward the email to.
-If a message needs to be added to the forwarded email, it can be done in the body of the email.
-If there's an attachment, it will be included in the forwarded email.
-Once finished composing the forwarded email, click on the 'Send' button
-             </pre>
-        <button onclick="copyCode(this)">Copy</button>
+        <h2>1. Email</h2>
+ <p><strong>Working of E-mail</strong></p>
+  <p>The email refers to the electronic mail means of communication of sending and receiving messages over the internet.</p>
+  <p>Email is the most common form of communication nowadays.</p>
+  <p>An email has significantly evolved over the past couple of years.</p>
+  <p>There are now stronger sync and messaging features along with stronger security and spam-related features.</p>
+
+  <p><strong>Components of an E-mail</strong></p>
+  <p><strong>Sender:</strong> The sender creates an email in which they record the info that needs to be transferred to the receiver.</p>
+  <p><strong>Receiver:</strong> The receiver gets the info sent by the sender via email.</p>
+  <p><strong>Email address:</strong> Like a house address where the communication arrives for both sender and receiver.</p>
+  <p><strong>Mailer:</strong> A program like Gmail or Outlook used to read, write, and manage emails.</p>
+  <p><strong>Mail server:</strong> Responsible for sending, receiving, managing, and recording all the emails.</p>
+  <p>Data is processed by their respective mail programs and delivered to users.</p>
+
+  <p><strong>SMTP (Simple Mail Transfer Protocol)</strong></p>
+  <p>SMTP uses the internet network connection to send and receive email messages.</p>
+
+  <p><strong>Protocols of E-mail</strong><p>
+  <p><strong>POP (Post Office Protocol):</strong> Drops the email at the mail provider and handles delivery. Works offline after sending.</p>
+  <p><strong>IMAP (Internet Message Access Protocol):</strong> Supports two-way communication, stores conversations in a database, and notifies senders when emails are read.</p>
+
+  <p><strong>Sending an Email</strong><p>
+  <ol>
+    <li>Open the email client and click on "compose new email".</li>
+    <li>Enter the recipient's address in the "To" field.</li>
+    <li>Enter a subject in the "Subject" field.</li>
+    <li>Attach any files if needed using the "Attach file" button.</li>
+    <li>Type the message in the body.</li>
+    <li>Click "Send".</li>
+  </ol>
+
+  <p><strong>Receiving an Email</strong></p>
+  <ol>
+    <li>Open the email client and go to the inbox.</li>
+    <li>Click on the email to open it.</li>
+    <li>Read the content.</li>
+    <li>Click on any attachments to open or download.</li>
+  </ol>
+
+  <p><strong>Forwarding an Email</strong><p>
+  <ol>
+    <li>Open the email client and go to the inbox.</li>
+    <li>Click on the email to forward.</li>
+    <li>Click the 'Forward' button or select "Forward" from the menu.</li>
+    <li>Enter the recipient's email in the 'To' field.</li>
+    <li>Add a message if needed.</li>
+    <li>Attachments will be included.</li>
+    <li>Click "Send".</li>
+  </ol>
+
     </div>
       <div class="code-section">
         <h2>Zoom</h2>
-        <pre>
-            Zoom and Google Meet are popular digital communication tools that allow users to conduct online meetings, webinars, and video conferences. These platforms heavily rely on Voice over Internet Protocol (VoIP) technology that allows voice calls to be made using an internet connection instead of a regular analog phone line. This technology facilitates real-time audio communication during meetings on Zoom and Google Meet. The use of VoIP technology ensures that both platforms can provide high-quality audio transmission, resulting in efficient and effective communication regardless of the participant's geographical location.
-Steps to create and organize a meeting in Zoom or Google Meet for Zoom:
-Log in to a Zoom account.
-Click on the "Schedule a Meeting" button.
-Fill in the details of the meeting, including the date, time, and duration.
-Give the meeting a name and add a description, if necessary.
-Choose whether to enable video, audio, and screen sharing.
-Select the time zone of the meeting.
-Choose whether to require a password.
-Meeting Password or not
-Click on the "Schedule" button to create the meeting.
-Share the meeting link (or) invite participants via email.
-When it's time for the meeting, open the Zoom app, navigate to the "Meetings" tab, and click on "Start" next to the scheduled meeting.
+        <pre><p><strong>Zoom and Google Meet</strong></p>
+<p>Zoom and Google Meet are popular digital communication tools that allow users to conduct online meetings, webinars, and video conferences.
+These platforms heavily rely on Voice over Internet Protocol (VoIP) technology, which enables voice calls using an internet connection instead of an analog phone line.
+This technology facilitates real-time audio communication during meetings on Zoom and Google Meet.
+VoIP ensures high-quality audio transmission for efficient communication regardless of location.</p>
+<p><strong>Steps to Create and Organize a Meeting in Zoom</strong></p>
+<p>Log in to a Zoom account.</p>
+<p>Click on the "Schedule a Meeting" button.</p>
+<p>Fill in the meeting details: date, time, and duration.</p>
+<p>Enter a meeting name and an optional description.</p>
+<p>Choose settings for video, audio, and screen sharing.</p>
+<p>Select the appropriate time zone.</p>
+<p>Choose whether to require a meeting password.</p>
+<p>Click the "Schedule" button to create the meeting.</p>
+<p>Share the meeting link or invite participants via email.</p>
+<p>At meeting time, open Zoom, go to the "Meetings" tab, and click "Start" next to the scheduled meeting.</p>
+
              </pre>
         <button onclick="copyCode(this)">Copy</button>
     </div>
      <div class="code-section">
         <h2>Google Meet</h2>
         <pre>
-            For Google Meet
-Log in to Google account.
-Open Google Calendar and click on the "+" button to create a new event.
-Give your event a title and select the date & time.
-Click on the "Add conferencing" button.
-Select "settings icon" from the options and choose video call options.
-Click on the "Save" button to create the event and send invites to participants.
-Share the event link or invite participants via email.
+<p><strong>Steps to Create and Organize a Meeting in Google Meet</strong></p>
+<p>Log in to your Google account.</p>
+<p>Open Google Calendar and click the "+" button to create a new event.</p>
+<p>Enter a title and select the date and time for the event.</p>
+<p>Click on the "Add conferencing" button.</p>
+<p>Select the settings icon to choose video call options.</p>
+<p>Click the "Save" button to create the event and send invites.</p>
+<p>Share the event link or invite participants via email.</p>
+
                </pre>
         <button onclick="copyCode(this)">Copy</button>
     </div>
@@ -160,23 +181,26 @@ Share the event link or invite participants via email.
         <pre>
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
-    &lt;head&gt;
-        &lt;title&gt;My Simple Webpage&lt;/title&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
-        &lt;h1&gt;Welcome to my web page&lt;/h1&gt;
-        &lt;p&gt;Checkout &lt;a href="https://www.google.com" target="_blank"&gt;Google&lt;/a&gt; for more information&lt;/p&gt;
-        
-        &lt;marquee behaviour="alternate" direction="right" bgcolor="#038cfc" height="40" loop="2"&gt;
-            IT club Impetus "Empowering tech minds, aspiring innovation."
-        &lt;/marquee&gt;
+  &lt;head&gt;
+    &lt;title&gt;My Simple Webpage&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Welcome to my web page&lt;/h1&gt;
 
-        &lt;center&gt;
-            &lt;img src="impetus.jpg" alt="club event" width="300" height="300"&gt;
-        &lt;/center&gt;
+    &lt;p&gt;Check out 
+      &lt;a href="https://www.google.com" target="_blank"&gt;Google&lt;/a&gt; 
+      for more information.&lt;/p&gt;
 
-        &lt;p&gt;The IT club Impetus was inaugurated on 6th August 2019 with a vision of fostering technical excellence and innovation.&lt;/p&gt;
-    &lt;/body&gt;
+    &lt;marquee behavior="alternate" direction="right" bgcolor="#038cfc" height="40" loop="2"&gt;
+      IT club Impetus "Empowering tech minds, aspiring innovation."
+    &lt;/marquee&gt;
+
+    &lt;center&gt;
+      &lt;img src="impetus.jpg" alt="club event" width="300" height="300"&gt;
+    &lt;/center&gt;
+
+    &lt;p&gt;The IT club Impetus was inaugurated on 6th August 2019 with a vision of fostering technical excellence and innovation.&lt;/p&gt;
+  &lt;/body&gt;
 &lt;/html&gt;
         </pre>
         <button onclick="copyCode(this)">Copy</button>
@@ -639,6 +663,7 @@ function validateForm() {
       nav a {
         margin: 0 15px;
       }
+    
     &lt;/style&gt;
   &lt;/head&gt;
   &lt;body&gt;
@@ -746,7 +771,7 @@ function validateForm() {
 
 
 <footer>
-    Found Error? Lemme know through <a href="mailto:jvn072@gmail.com">jvn072@gmail.com</a>
+   Gud Luck
 </footer>
 
 <script>
