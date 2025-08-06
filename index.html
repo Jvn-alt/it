@@ -181,26 +181,98 @@ VoIP ensures high-quality audio transmission for efficient communication regardl
         <pre>
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
-  &lt;head&gt;
-    &lt;title&gt;My Simple Webpage&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;h1&gt;Welcome to my web page&lt;/h1&gt;
+&lt;head&gt;
+    &lt;title&gt;Form Validation&lt;/title&gt;
+    &lt;script&gt;
+        function validateForm() {
+            let name = document.forms["myForm"]["name"].value.trim();
+            let email = document.forms["myForm"]["email"].value.trim();
+            let mobile = document.forms["myForm"]["mobile"].value.trim();
 
-    &lt;p&gt;Check out 
-      &lt;a href="https://www.google.com" target="_blank"&gt;Google&lt;/a&gt; 
-      for more information.&lt;/p&gt;
+            if (name === "" || email === "" || mobile === "") {
+                alert("Please fill out all required fields (Name, Email, Mobile Number).");
+                return false;
+            }
 
-    &lt;marquee behavior="alternate" direction="right" bgcolor="#038cfc" height="40" loop="2"&gt;
-      IT club Impetus "Empowering tech minds, aspiring innovation."
-    &lt;/marquee&gt;
+            // Validate Email
+            let emailPattern = /^[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
+            if (!emailPattern.test(email)) {
+                alert("Please enter a valid email address.");
+                return false;
+            }
 
+            // Validate Mobile Number (only digits, 10 characters)
+            let mobilePattern = /^\d{10}$/;
+            if (!mobilePattern.test(mobile)) {
+                alert("Mobile number must be exactly 10 digits.");
+                return false;
+            }
+
+            alert("Form submitted successfully!");
+            return true;
+        }
+    &lt;/script&gt;
+    &lt;style&gt;
+        body {
+            background-image: url("PHOTO.JPG");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        div {
+            margin: 20px;
+            border: 20px;
+        }
+
+        form {
+            width: 500px;
+            height: 500px;
+            border: 2px solid black;
+            text-align: left;
+            background-color: #FFE5B4;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
     &lt;center&gt;
-      &lt;img src="impetus.jpg" alt="club event" width="300" height="300"&gt;
+        &lt;h2&gt;Registration Form&lt;/h2&gt;
+        &lt;div&gt;
+            &lt;form name="myForm" onsubmit="return validateForm()"&gt;
+                &lt;div&gt;
+                    &lt;label for="name"&gt;Name:&lt;/label&gt;
+                &lt;/div&gt;
+                &lt;input type="text" id="name" name="name"&gt;
+                &lt;div&gt;
+                    &lt;label for="email"&gt;Email:&lt;/label&gt;
+                &lt;/div&gt;
+                &lt;input type="text" id="email" name="email"&gt;
+                &lt;div&gt;
+                    &lt;label for="mobile"&gt;Mobile Number:&lt;/label&gt;
+                &lt;/div&gt;
+                &lt;input type="text" id="mobile" name="mobile"&gt;
+                &lt;div&gt;
+                    &lt;label&gt;Gender:&lt;/label&gt;
+                &lt;/div&gt;
+                &lt;div&gt;
+                    &lt;input type="radio" name="gender" value="Male"&gt; Male&lt;br&gt;
+                    &lt;input type="radio" name="gender" value="Female"&gt; Female
+                &lt;/div&gt;
+                &lt;div&gt;
+                    &lt;label&gt;Hobbies:&lt;/label&gt;
+                &lt;/div&gt;
+                &lt;div&gt;
+                    &lt;input type="checkbox" name="hobby1" value="Reading"&gt; Reading
+                    &lt;input type="checkbox" name="hobby2" value="Music"&gt; Music
+                    &lt;input type="checkbox" name="hobby3" value="Sports"&gt; Sports
+                &lt;/div&gt;
+                &lt;div&gt;
+                    &lt;input type="submit" value="Submit"&gt;
+                &lt;/div&gt;
+            &lt;/form&gt;
+        &lt;/div&gt;
     &lt;/center&gt;
-
-    &lt;p&gt;The IT club Impetus was inaugurated on 6th August 2019 with a vision of fostering technical excellence and innovation.&lt;/p&gt;
-  &lt;/body&gt;
+&lt;/body&gt;
 &lt;/html&gt;
         </pre>
         <button onclick="copyCode(this)">Copy</button>
