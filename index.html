@@ -159,35 +159,35 @@ VoIP ensures high-quality audio transmission for efficient communication regardl
      <div class="code-section">
         <h2>Google Meet</h2>
         <pre>
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Math Expression Evaluator</title>
-    <script>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Math Expression Evaluator&lt;/title&gt;
+    &lt;script&gt;
         function EvaluateExpression() {
-            const expression = document.getElementById("MathExpr").value;
+            const expression = document.getElementById(&quot;MathExpr&quot;).value;
             let result;
 
             try {
                 result = eval(expression);
-                document.getElementById("result").innerHTML = "Result: " + result;
+                document.getElementById(&quot;result&quot;).innerHTML = &quot;Result: &quot; + result;
             } catch (error) {
-                document.getElementById("result").innerHTML = "Invalid Expression!";
+                document.getElementById(&quot;result&quot;).innerHTML = &quot;Invalid Expression!&quot;;
             }
         }
-    </script>
-</head>
-<body>
-    <h2>Mathematical Expression Evaluator</h2>
-    <form onsubmit="event.preventDefault(); EvaluateExpression();">
-        <label for="MathExpr">Enter Expression: </label>
-        <input type="text" id="MathExpr" name="MathExpr" placeholder="e.g. 3+4*(2-1)" required>
-        <input type="submit" value="Evaluate">
-    </form>
+    &lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h2&gt;Mathematical Expression Evaluator&lt;/h2&gt;
+    &lt;form onsubmit=&quot;event.preventDefault(); EvaluateExpression();&quot;&gt;
+        &lt;label for=&quot;MathExpr&quot;&gt;Enter Expression: &lt;/label&gt;
+        &lt;input type=&quot;text&quot; id=&quot;MathExpr&quot; name=&quot;MathExpr&quot; placeholder=&quot;e.g. 3+4*(2-1)&quot; required&gt;
+        &lt;input type=&quot;submit&quot; value=&quot;Evaluate&quot;&gt;
+    &lt;/form&gt;
 
-    <p id="result"></p>
-</body>
-</html>
+    &lt;p id=&quot;result&quot;&gt;&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
 
                </pre>
         <button onclick="copyCode(this)">Copy</button>
