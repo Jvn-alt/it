@@ -159,14 +159,35 @@ VoIP ensures high-quality audio transmission for efficient communication regardl
      <div class="code-section">
         <h2>Google Meet</h2>
         <pre>
-<p><strong>Steps to Create and Organize a Meeting in Google Meet</strong></p>
-<p>Log in to your Google account.</p>
-<p>Open Google Calendar and click the "+" button to create a new event.</p>
-<p>Enter a title and select the date and time for the event.</p>
-<p>Click on the "Add conferencing" button.</p>
-<p>Select the settings icon to choose video call options.</p>
-<p>Click the "Save" button to create the event and send invites.</p>
-<p>Share the event link or invite participants via email.</p>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Math Expression Evaluator</title>
+    <script>
+        function EvaluateExpression() {
+            const expression = document.getElementById("MathExpr").value;
+            let result;
+
+            try {
+                result = eval(expression);
+                document.getElementById("result").innerHTML = "Result: " + result;
+            } catch (error) {
+                document.getElementById("result").innerHTML = "Invalid Expression!";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>Mathematical Expression Evaluator</h2>
+    <form onsubmit="event.preventDefault(); EvaluateExpression();">
+        <label for="MathExpr">Enter Expression: </label>
+        <input type="text" id="MathExpr" name="MathExpr" placeholder="e.g. 3+4*(2-1)" required>
+        <input type="submit" value="Evaluate">
+    </form>
+
+    <p id="result"></p>
+</body>
+</html>
 
                </pre>
         <button onclick="copyCode(this)">Copy</button>
