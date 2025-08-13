@@ -307,81 +307,33 @@ if (N &gt; 0) {
     <div class="code-section">
         <h2>IT LAB 4 (Time Table) </h2>
         <pre>
-&lt;!DOCTYPE HTML&gt;
-&lt;HTML&gt;
-&lt;HEAD&gt;
-    &lt;TITLE&gt;BCA IV&lt;/TITLE&gt; 
-    &lt;style&gt;
-        table { border-collapse: collapse; width: 50%; margin: 20px auto; }
-        th, td { border: 1px solid black; padding: 8px; text-align: center; }
-        th { background-color: #f2f2f2; }
-        tr:hover { background-color: rgb(207, 179, 255); }
-    &lt;/style&gt;
-&lt;/HEAD&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Date in Words&lt;/title&gt;
+&lt;/head&gt;
 &lt;body&gt;
-    &lt;h1 style="text-align:center"&gt;BCA IV&lt;sup&gt;th&lt;/sup&gt; Semester Time Table&lt;/h1&gt;   
-    &lt;table&gt;
-        &lt;tr&gt;
-            &lt;th&gt;DAY&lt;/th&gt;
-            &lt;th&gt;8:30-9:30 AM&lt;/th&gt;
-            &lt;th&gt;9:30-10:25 AM&lt;/th&gt;
-            &lt;th&gt;10:25-10:50 AM&lt;/th&gt;
-            &lt;th&gt;10:50-11:50 AM&lt;/th&gt;
-            &lt;th&gt;11:50-12:45 PM&lt;/th&gt;
-            &lt;th&gt;12:45-1:30 PM&lt;/th&gt;
-            &lt;th&gt;1:30-2:30 PM&lt;/th&gt;
-            &lt;th&gt;2:30-3:30 PM&lt;/th&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;MONDAY&lt;/td&gt;
-            &lt;td&gt;SE&lt;/td&gt;
-            &lt;td&gt;FEIA&lt;/td&gt;
-            &lt;td rowspan="7"&gt;SHORT BREAK&lt;/td&gt;
-            &lt;td&gt;DAA LAB&lt;/td&gt;
-            &lt;td&gt;DAA LAB&lt;/td&gt;
-            &lt;td rowspan="7"&gt;LUNCH BREAK&lt;/td&gt;
-            &lt;td&gt;IT LAB&lt;/td&gt;
-            &lt;td&gt;IT LAB&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;TUESDAY&lt;/td&gt;
-            &lt;td&gt;DAA LAB&lt;/td&gt;
-            &lt;td&gt;DAA LAB&lt;/td&gt;
-            &lt;td&gt;LANG&lt;/td&gt;
-            &lt;td&gt;ENG&lt;/td&gt;
-            &lt;td&gt;IT&lt;/td&gt;
-            &lt;td&gt;IT LAB&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;WEDNESDAY&lt;/td&gt;
-            &lt;td&gt;ENG&lt;/td&gt;
-            &lt;td&gt;IT&lt;/td&gt;
-            &lt;td&gt;SE&lt;/td&gt;
-            &lt;td&gt;DAA&lt;/td&gt;
-            &lt;td&gt;IT LAB&lt;/td&gt;
-            &lt;td&gt;LANG&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;THURSDAY&lt;/td&gt;
-            &lt;td&gt;FEIA&lt;/td&gt;
-            &lt;td&gt;CI&lt;/td&gt;
-            &lt;td&gt;SE&lt;/td&gt;
-            &lt;td&gt;DAA&lt;/td&gt;
-            &lt;td&gt;ENG&lt;/td&gt;
-            &lt;td&gt;LANG&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;FRIDAY&lt;/td&gt;
-            &lt;td&gt;LANG&lt;/td&gt;
-            &lt;td&gt;DAA&lt;/td&gt;
-            &lt;td&gt;IT&lt;/td&gt;
-            &lt;td&gt;ENG&lt;/td&gt;
-            &lt;td&gt;FEIA&lt;/td&gt;
-            &lt;td&gt;CI&lt;/td&gt;
-        &lt;/tr&gt;
-    &lt;/table&gt;
+    &lt;h2&gt;Current Date in Words&lt;/h2&gt;
+    &lt;button onclick="showDateInWords()"&gt;Show Date&lt;/button&gt;
+    &lt;p id="dateResult"&gt;&lt;/p&gt;
+
+    &lt;script&gt;
+        function showDateInWords() {
+            let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+            let months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+
+            let today = new Date();
+            let dayName = days[today.getDay()];
+            let monthName = months[today.getMonth()];
+            let date = today.getDate();
+            let year = today.getFullYear();
+
+            document.getElementById("dateResult").innerHTML = 
+                `Today is ${dayName}, ${monthName} ${date}, ${year}`;
+        }
+    &lt;/script&gt;
 &lt;/body&gt;
-&lt;/HTML&gt;
+&lt;/html&gt;
         </pre>
         <button onclick="copyCode(this)">Copy</button>
     </div>
